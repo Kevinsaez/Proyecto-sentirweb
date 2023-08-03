@@ -2,8 +2,8 @@
   @import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Metal+Mania&display=swap');
 
   :root{
-    --colorBlue: linear-gradient(0deg, rgba(9,9,121,1) 0%, #5F9DF7 80%);
-    --bgLightBlue:#5F9DF7;
+    --colorBlue: linear-gradient(0deg, rgb(168, 168, 255) 0%, #5F9DF7 80%);
+    --font-color:#5F9DF7;
     --colorWhite:#F5F5F5;
     --colorBlack:#000000;
     --colordarkGrey:#5A5A5A;
@@ -20,25 +20,45 @@
   font-size: 20px;
 }
 /* navBar */
+.navbar{
+ opacity: 70%;
+  box-shadow: 0 0 20px;
+  border-radius: 15px;
+  background:rgba(0, 0, 0, 0.6);
+}
 .logo-banda{
   width: 30px;
 }
 
 .redes{
-  gap: 15px;
+  gap: 30px;
 }
 .iconoRedes{
   font-size: 25px;
+  color:#F8F9Fa;
+  margin: 0;
 }
 /* navBar */
-/*
+
 body{
   background: url(./imagenes/body.JPG);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment:fixed;
 }
-*/
+
+
+/* Media query */
+@media(min-width:1000px){
+  .redes{
+    
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+
+
 /*--------------------animacion---------------------------------------------------------*/
 .logo-banda{animation:logo-banda .6s linear infinite both}
 /* ----------------------------------------------
